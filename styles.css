@@ -1,0 +1,217 @@
+
+body {
+    background-color: #EFEAD8;
+    font-family: 'Nanum Gothic';
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    overflow-y: scroll;     /*allows functionality for scrolling*/
+}
+body::-webkit-scrollbar {   /*hides scrollbar*/
+    display: none;
+}
+button {
+    background-color: white;        /*navigational buttons*/
+    padding: 5px 15px;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Homemade Apple';
+    margin: 2px 2px;
+    /* transition: 0.3s; */
+    cursor: pointer;
+    text-decoration: none;
+}
+h1 {                        /*styles added for headers*/
+    margin: 5px auto 0 auto;
+    font-family: 'Homemade Apple';
+    font-size: 3.5rem;
+}
+h2 {
+    color:#EFEAD8;
+    margin-top: none;
+    font-family: 'Nanum Gothic';
+    font-size: 3rem;
+}
+h3 {
+    font-family: 'Homemade Apple';
+    padding-top: 8%;
+    text-align: center;
+    font-size: 2rem;
+}
+p{                      /*styles for paragraphs*/
+    padding: 5px 16px;
+    font-family: 'Nanum Gothic';
+    line-height: 1.5;
+}
+th {
+    padding: 10px;
+}
+.banner-container {         /*instructions for the banner at the top of each page*/
+    margin-top: 75px;
+    position: absolute;
+}
+li {
+    max-width: 50%;
+}
+.circles {              /*styles for the circle elements on the About page*/
+   display: flex;
+   position: relative;
+   margin-top: 20%;
+   margin-left: 10%;
+}
+.text-circle {          /*invisible container that holds about me info*/
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    border-radius: 100%;
+    margin: 5px 19%;
+    padding: 15px;
+    display: flex;
+    height: 605px;
+    width: 605px;
+    overflow-y: scroll;
+    display: block;
+}
+.circle1 {
+    max-width: 645px;
+    position: absolute;
+    padding-left: 9.5%;
+}
+
+.skill-circle {         /*invisible container that holds the skills info*/
+    border-radius: 100%;
+    margin: -30% 36%;
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    height: 515px;
+    width: 515px;
+    overflow: auto;
+    display: block;
+}
+.circles2 {
+    display: flex;
+    position: relative;
+    margin-left: 20%;
+}
+.circle2 {
+    max-width: 550px;
+    position: aboslute;
+    padding-left: 20%;
+}
+table {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.text-circle::-webkit-scrollbar {   /*hides scrollbar*/
+    display: none;
+}
+
+a:link, a:visited {     /*link properties*/
+    text-decoration: none;
+    color:#EFEAD8;
+}
+a:hover, a:active {
+    text-decoration: none;
+    color:rgb(40, 39, 43);
+}
+.ex {               /*styles for experience table*/
+    width: 30%;
+    margin: 200px auto 50px auto;
+    position: absolute;
+    padding-left: 55%;
+}
+.profilepic {           /*styles for picture of self*/
+    margin-top: 5%;
+    margin-right: 20px;
+    margin-bottom: 2%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* /* object-fit: cover; 
+    object-position: 80% 100%; */
+    float: left;
+}
+
+.contact {          /*contact styles*/
+    text-align: left;
+    padding-top: 4%;
+    padding-left: 25%
+    /* text-align: center; */
+}
+.school {           /*education/school styles*/
+    height: 300px;
+    position: relative;
+    margin-top: 5%;
+    padding-left: 15%;
+}
+ul {                /*styles for ul properties, for some reason the education page is still quite awkward looking.  I need to rework it possibly into a table rather than a list*/
+    padding-top: 18%;
+    list-style-position: inside;
+}
+.name {
+    position: absolute;
+    margin-top: 4%;
+    text-align: center;
+    padding-left: 25%;
+}
+
+.banner {       /* controls the banner image properties*/
+    display: flex;
+    max-width: 100%;
+    left: 0px;
+}
+
+@media (max-width: 1230px) {        /*I began to attemp to make this page flex properly when resized.  It still needs a lot of work as it was a lot harder than I had inticipated.  Anything below this is me attempting to make it work on 2 extra device sizes*/
+    .banner {
+        flex: 100%;
+        max-width: 200%;
+    }
+    .aboutme {
+        flex: 100%;
+        max-width: 100%;
+        margin-top: 45%;
+    }
+    .name {
+        position: absolute;
+        padding-top: 28%;
+        padding-left: 45%;
+        padding-top: none;
+    }
+    h1 {
+        margin: 5px auto 0 auto;
+        font-family: 'Homemade Apple';
+        font-size: 2.75rem;
+    }
+}
+@media (max-width: 705px) {
+    .banner {
+        flex: 100%;
+        max-width: 220%;
+        position: relative;
+        left: -50px;
+
+    }
+    .name {
+        position: absolute;
+        padding-top: 10%;
+        padding-left: 35%;
+        padding-top: none;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 15px;
+    }
+    .intro {
+        margin: 115% auto 200px 35%; 
+        text-align: justify;
+        overflow: scroll;
+        width: 60%;
+        height: 485px;
+
+    }
+}
